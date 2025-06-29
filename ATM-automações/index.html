@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATM Automações</title>
+  <meta name="description" content="ATM Automações: Excelência em automação industrial, predial e residencial. Soluções inteligentes e personalizadas para segurança, eficiência e controle. Transformando negócios há mais de 10 anos.">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <img src="assets/img/logo-header.png" alt="Logo ATM Automações" class="logo-header">
+      
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+      
+      <nav>
+        <ul class="nav">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="./servicos.html">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="./sobre.html">Sobre Nós</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-container-wrapper">
+        <h1 class="hero-title">Transformando Negócios com Inovação</h1>
+
+        <div class="hero-flex-content">
+          <img src="assets/img/imagem2.jpg" alt="Tecnologia de automação transformando negócios" class="hero-image-main">
+          
+          <div class="hero-text-content">
+            <p class="hero-short-text">Fornecemos soluções inteligentes para automação industrial, predial e residencial.</p>
+            <p class="hero-long-text">Com mais de 10 anos de experiência, a <strong>ATM Automações</strong> é referência em soluções inteligentes e personalizadas para automação industrial, predial e residencial. Atuamos com tecnologia de ponta para oferecer segurança, eficiência energética e controle total dos processos automatizados, incluindo **sistemas de câmeras**, **automação de portões**, **controle de acesso com reconhecimento facial** e **interfonia avançada**.</p>
+            
+            <ul class="destaques">
+              <li>✅ Excelência comprovada há mais de 10 anos</li>
+              <li>✅ Soluções completas para empresas e residências</li>
+              <li>✅ Atendimento personalizado e projetos sob medida</li>
+            </ul>
+            <a href="#contato" class="btn-contato">Solicite um Orçamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+      <div class="container">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-lista">
+          <div class="servico-item">
+            <h3>Automação Industrial</h3>
+            <p>Sistemas que aumentam a eficiência e reduzem custos operacionais.</p>
+          </div>
+          <div class="servico-item">
+            <h3>Automação Predial</h3>
+            <p>Soluções inteligentes para prédios comerciais e condomínios.</p>
+          </div>
+          <div class="servico-item">
+            <h3>Automação Residencial</h3>
+            <p>Transforme sua casa em um lar inteligente e conectado.</p>
+          </div>
+        </div>
+        <a href="servicos.html" class="btn-servicos-ver-mais">Ver Todos os Serviços</a>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <div class="container">
+        <h2>Entre em Contato</h2>
+        <p>Tire suas dúvidas ou solicite um orçamento pelos nossos canais diretos:</p>
+        
+        <div class="contato-info-direto"> <p><strong>Email:</strong> comercial.atomica@gmail.com</p>
+            <p><strong>Telefone:</strong> (11) 99667-0626</p>
+            
+            <a href="https://wa.me/5511996670626?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20ATM%20Automações." 
+               class="btn-whatsapp" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <img src="assets/img/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon">
+                Fale Conosco pelo WhatsApp
+            </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 ATM Automações. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.nav');
+
+      if (menuToggle && nav) {
+        menuToggle.addEventListener('click', function() {
+          nav.classList.toggle('active');
+        });
+
+        nav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            if (nav.classList.contains('active')) {
+              nav.classList.remove('active');
+            }
+          });
+        });
+      }
+    });
+  </script>
+
+  <a href="https://wa.me/5511996670626?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20ATM%20Automações." 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     aria-label="Fale conosco pelo WhatsApp">
+      <img src="assets/img/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-float-icon">
+  </a>
+</body>
+</html>
